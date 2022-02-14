@@ -2356,19 +2356,19 @@ def tutorialNo ():
          <p><span style="text-decoration: underline;"><strong>STEP-1:</strong></span> First, Open PVSyst from your system. Then Under the Grid-Connected Tab, Create your PV System Design. Now, After setting the parameters of System, detailed losses, Near Shadings and other values, Now, Click on the "<em><strong>Advanced Simul.</strong></em>" Option on the right side as shown in the below picture.</p>
      """,unsafe_allow_html=True)
      st.write('\n')
-     st.image("tuts/pvsyst/picture2.png")
+     st.image("tuts/pvsyst/Picture2.png")
      #Step-2
      st.write("""
               <p><span style="text-decoration: underline;"><strong>STEP-2:</strong></span> Now after you click on "<em><strong>Advanced Simul.</strong></em>", a new window will open as shown here. In this window, select <em><strong>"Output File"</strong></em> Option.</p>
               """,unsafe_allow_html=True)
-     st.image("tuts/pvsyst/picture3.png") 
+     st.image("tuts/pvsyst/Picture3.png") 
     
      #Step-3
      st.write('\n')
      st.write("""
              <p><span style="text-decoration: underline;"><strong>STEP-3:</strong></span> As you click on <em><strong>"Output File"</strong></em> Option, again another window will open. Inside this window, first, on the Top left corner, select <em><strong>"File Name"</strong></em> and if you wish to change the output csv file, then please go ahead otherwise let other parameters <em><strong>unchanged</strong></em> on the <strong><em>left tab</em></strong> as shown below.&nbsp;</p>
               """,unsafe_allow_html=True)
-     st.image("tuts/pvsyst/picture4.png") 
+     st.image("tuts/pvsyst/Picture4.png") 
      st.write('\n')
      #step-4
      st.write('\n')
@@ -2376,7 +2376,7 @@ def tutorialNo ():
               <p><span style="text-decoration: underline;"><strong>STEP-4:</strong></span> Now under the Simulation variables section under the same tab as previous step, first, <strong>select</strong> <em><strong>GlobInc</strong></em> under <em><strong>InColl</strong></em> group, and <em><strong>un-check Globeff</strong></em> parameter.</p>
               """,unsafe_allow_html=True)
      st.write('\n')
-     st.image("tuts/pvsyst/picture5.png") 
+     st.image("tuts/pvsyst/Picture5.png") 
      st.write('\n')
      #step-5
      st.write('\n')
@@ -2384,7 +2384,7 @@ def tutorialNo ():
               <p><span style="text-decoration: underline;"><strong>STEP-5:</strong></span> Next, Under the <em><strong>MetData</strong></em> group, select <em><strong>GlobHor, DiffHor</strong></em> and <em><strong>T_Amb</strong></em>. Follow the picture below for reference.</p>
               """,unsafe_allow_html=True)
      st.write('\n')
-     st.image("tuts/pvsyst/picture6.png") 
+     st.image("tuts/pvsyst/Picture6.png") 
      st.write('\n')
      
      
@@ -2394,7 +2394,7 @@ def tutorialNo ():
               <p><span style="text-decoration: underline;"><strong>STEP-6</strong></span>: Next, Under the <strong>Array</strong> group, select <em><strong>EArray, TArray, IArray, UArray</strong></em> and<em><strong> ArrayOn</strong></em> parameters.</p>
               """,unsafe_allow_html=True)
      st.write('\n')
-     st.image("tuts/pvsyst/picture7.png") 
+     st.image("tuts/pvsyst/Picture7.png") 
      st.write('\n')
      
      #step-7
@@ -2403,7 +2403,7 @@ def tutorialNo ():
               <p><span style="text-decoration: underline;"><strong>STEP-7:</strong></span> Similarly, Under the <strong>System</strong> group, Select only<strong><em> E_Grid</em></strong> parameter and in <em><strong>NormFac</strong></em> group, <strong>Un-check</strong> the <em><strong>PR</strong></em> Parameters.</p>
               """,unsafe_allow_html=True)
      st.write('\n')
-     st.image("tuts/pvsyst/picture8.png") 
+     st.image("tuts/pvsyst/Picture8.png") 
      st.write('\n')
      
      
@@ -2413,7 +2413,7 @@ def tutorialNo ():
               <p><span style="text-decoration: underline;"><strong>STEP-8:</strong></span> Now, all the parameters selection is done &amp; ready to be saved in the <em><strong>output .csv</strong></em> file. The <strong>selected parameters</strong> can be seen on the<strong><em> right side tab</em></strong> of the same window. Click on <em><span style="text-decoration: underline;"><strong>OK</strong></span></em> and exit this window.</p>
               """,unsafe_allow_html=True)
      st.write('\n')
-     st.image("tuts/pvsyst/picture9.png") 
+     st.image("tuts/pvsyst/Picture9.png") 
      st.write('\n')
      
      
@@ -2423,7 +2423,7 @@ def tutorialNo ():
               <p><strong><span style="text-decoration: underline;">STEP-9:</span></strong> Back to the "<em><strong>Advanced Simul.</strong></em>" window, click on <em><strong>Simulation</strong></em> on the <em>bottom left corner</em> of the window and <em><strong>start</strong></em> the project simulation. It'll take few seconds to complete the simulation.&nbsp;</p>
               """,unsafe_allow_html=True)
      st.write('\n')
-     st.image("tuts/pvsyst/picture10.png") 
+     st.image("tuts/pvsyst/Picture10.png") 
      st.write('\n')
      
      
@@ -2433,13 +2433,13 @@ def tutorialNo ():
              <p><span style="text-decoration: underline;"><strong>STEP-10:</strong></span> After the simulation done, your <em><strong>output.csv</strong></em> file is ready and the path to file is now showing in your pvsyst window. Else, you can directly go to <em>path/users/(your_user_name)/pvsyst7.0_Data/UserHourly</em> folder.</p> 
               """,unsafe_allow_html=True)
      st.write('\n')
-     st.image("tuts/pvsyst/picture11.png")
+     st.image("tuts/pvsyst/Picture11.png")
      st.write('\n')
      st.write('**NEXT**')
-     st.image("tuts/pvsyst/picture12.png")
+     st.image("tuts/pvsyst/Picture12.png")
      st.write('\n')
      st.write('**NEXT**')
-     st.image("tuts/pvsyst/picture13.png")
+     st.image("tuts/pvsyst/Picture13.png")
      st.write('\n')
      
      #step-11
@@ -2448,7 +2448,7 @@ def tutorialNo ():
              <p><span style="text-decoration: underline;"><strong>STEP-11:</strong></span> Now, open the Folder and select your recently generated <em><strong>hourly data csv file</strong></em> for your grid-connected project. Open the .csv file and follow the <em><strong>next steps for Data cleaning</strong></em>.</p>
               """,unsafe_allow_html=True)
      st.write('\n')
-     st.image("tuts/pvsyst/picture14.jpg") 
+     st.image("tuts/pvsyst/Picture14.jpg") 
      st.write('\n')
      
      
@@ -2458,7 +2458,7 @@ def tutorialNo ():
               <p><span style="text-decoration: underline;"><strong>STEP-12:</strong></span> Now as shown in the below picture, first select the first 10 rows and simply delete them.</p>
               """,unsafe_allow_html=True)
      st.write('\n')
-     st.image("tuts/pvsyst/picture15.jpg") 
+     st.image("tuts/pvsyst/Picture15.jpg") 
      st.write('\n')
      
      #step-13
@@ -2467,7 +2467,7 @@ def tutorialNo ():
               <p><span style="text-decoration: underline;"><strong>STEP-13:</strong></span> Again, after the deleting first 10 rows, now delete the unit rows and the row below it. And save the .csv file.</p>
               """,unsafe_allow_html=True)
      st.write('\n')
-     st.image("tuts/pvsyst/picture16.png") 
+     st.image("tuts/pvsyst/Picture16.png") 
      st.write('\n')
      
      #Uploading data into kPVIZ
