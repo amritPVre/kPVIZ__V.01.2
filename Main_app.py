@@ -176,7 +176,7 @@ def home():
     #st.write('\n')
     
     #button
-    col0,col1,col2,col3=st.columns((1.6,0.4,0.55,1.45))
+    col0,col1,col2,col3=st.columns((1.45,0.55,0.55,1.45))
     b = st.markdown("""
 <style>
 div.stButton > button:first-child {
@@ -286,13 +286,13 @@ div.stButton > button:hover {
         <div id="wb_Text14" style="">
 <ul style="font-size:12px;list-style-type:disc;box-shadow: 1px 1px 1px 1px grey;border-radius:7px 7px 7px 7px;padding:0.9rem;line-height: 2.1;">
 
-<li style="margin:0 0 0 18px;"><b>Hourly to Monthly Data Analytics Dashboard</b>
+<li style="margin:0 0 0 18px;"><b>Analytics Dashboard - Hourly to Monthly</b>
 </li>
-<li style="margin:0 0 0 18px;"><b>Seprate Analytics for all Major Solar Parameters</b>
+<li style="margin:0 0 0 18px;"><b>Analytics for all Main Solar Parameters</b>
 </li>
-<li style="margin:0 0 0 18px;"><b>Interactive Graphs to Visualize Hourly Values</b>
+<li style="margin:0 0 0 18px;"><b>Interactive Visualization of Dataset</b>
 </li>
-<li style="margin:0 0 0 18px;"><b>Complete Exploratory Data Analytics of Solar Data</b>
+<li style="margin:0 0 0 18px;"><b>Complete EDA of Solar Dataset</b>
 </li>
 </ul>
 </div>
@@ -305,13 +305,13 @@ div.stButton > button:hover {
         <div id="wb_Text14" style="">
 <ul style="font-size:12px;list-style-type:disc;box-shadow: 1px 1px 1px 1px grey;border-radius:7px 7px 7px 7px;padding:0.9rem;line-height: 2.1;">
 
-<li style="margin:0 0 0 18px;"><b>Interactive Graphs - Save as Image in Your Desktop</b>
+<li style="margin:0 0 0 18px;"><b>Interactive Charts - Save as Image Option</b>
 </li>
-<li style="margin:0 0 0 18px;"><b>Option to Download Daily & Monthly Data as .csv file</b>
+<li style="margin:0 0 0 18px;"><b>Download Daily & Monthly Data as .csv</b>
 </li>
-<li style="margin:0 0 0 18px;"><b>Graphs - GHI-GII, DC-AC Energy & Amb-to-PV Temp </b>
+<li style="margin:0 0 0 18px;"><b>Graphs - GHI-GII, DC-AC Energy & Amb-PV Temp</b>
 </li>
-<li style="margin:0 0 0 18px;"><b>Correlation Matrix for All THe Solar Parameters</b>
+<li style="margin:0 0 0 18px;"><b>Correlation Matrix for Entire Dataset</b>
 </li>
 </ul>
 </div>
@@ -323,13 +323,13 @@ div.stButton > button:hover {
         <div id="wb_Text14" style="">
 <ul style="font-size:12px;list-style-type:disc;box-shadow: 1px 1px 1px 1px grey;border-radius:7px 7px 7px 7px;padding:0.9rem;line-height: 2.1;">
 
-<li style="margin:0 0 0 18px;"><b>Analytics Summary Dashboard with Finanacial Detail</b>
+<li style="margin:0 0 0 18px;"><b>Summary Dashboard with Finanacial Detail</b>
 </li>
-<li style="margin:0 0 0 18px;"><b>Financial Analysis Include IRR, NPV, SPP & Net CF</b>
+<li style="margin:0 0 0 18px;"><b>Financials Include IRR, NPV, SPP & Net CF</b>
 </li>
-<li style="margin:0 0 0 18px;"><b>Chart & Data of Net CashFlow Statement for 25 Years</b>
+<li style="margin:0 0 0 18px;"><b>Net CashFlow Statement for 25 Years</b>
 </li>
-<li style="margin:0 0 0 18px;"><b>Carbon Footprint & Off-set Analytics for Solar Plant</b>
+<li style="margin:0 0 0 18px;"><b>Carbon Off-set Analytics</b>
 </li>
 </ul>
 </div>
@@ -407,7 +407,7 @@ def upload_data():
            'PV_Wp':[Wp],
            'Power_eff':[co_eff],
            'Proj_Cost':[Proj_cost],
-           'Electricity_Tariff':[tariff_type],
+           'Electricity_tariff':[tariff_type],
            'Power_rate':[power_rate],
            'OnM':[OnM_Cost],
            'Tariff_Esc':[Tariff_esc],
@@ -422,7 +422,7 @@ def upload_data():
            'AC_Cap':[AC],
            'PV_Wp':[Wp],
            'Proj_Cost':[Proj_cost],
-           'Electricity_Tariff':[tariff_type],
+           'Electricity_tariff':[tariff_type],
            'Power_rate':[power_rate],
            'OnM':[OnM_Cost],
            'Tariff_Esc':[Tariff_esc],
@@ -685,7 +685,7 @@ def EDA():
         col2.info(f'Pair Plot is an important tool for EDA. It helps to understand the distribution of a single variable and the relationship among TWO variables. Its a very very useful method for Trend Analysis like Operational Data of Solar PV Plants. Here, all the parameters plotted against each other. The COLOR Bar on right is for AC Power Output. And the Entire plotting is donw with in corelation with AC Power O/P because this is the main component in the entire analysis that means overall performance of any solar PV plant.')
  
 
-@app.addapp(title='Hourly Data Analysis',icon='⏳')
+@app.addapp(title='Hourly Analytics',icon='⏳')
 def hourly():
     col1,col2,col3=st.columns((0.005,2.99,0.005))
     col2.write(f'<p style="background-color:#1F306B;color:#FFFFFF;text-align:center;padding:0.4rem;font-size:26px;border-radius:7px 7px 7px 7px;"><b>Hourly Solar Data Analytics</b></p>', unsafe_allow_html=True)
@@ -952,7 +952,7 @@ def hourly():
         col1.info('The Daily Distribution Plot of **DC Power** depicts the concentration of DC Power Generation at Certain Hours of The Day. Here, It can be seen the most of Peak Generation happen during **10AM to 2PM** every day. Hence, this period is the **Peak Generation Hours** of the PV System.')
         col2.info('Similar to the **Daily DC Power Distribution Plot**, here the **AC Power Distribution** also shows the same kind of concentration in Power Generation. Here also, the Peak Generating Hours are **10AM to 2PM** every day. So, the **Peak Generation Hours** same for both **DC** & **AC** Power Generation.')
         
-@app.addapp(title='Daily Data Analysis',icon='☀')
+@app.addapp(title='Daily Analytics',icon='☀')
 def Daily():
     col1,col2,col3=st.columns((0.005,2.99,0.005))
     col2.write(f'<p style="background-color:#1F306B;color:#FFFFFF;text-align:center;padding:0.4rem;font-size:26px;border-radius:7px 7px 7px 7px;"><b>Daily Solar Data Analytics</b></p>', unsafe_allow_html=True)
@@ -1293,7 +1293,7 @@ def Daily():
         col2.info(f'Similar to the plot on left, this plot represents the **Daily AC Energy** Data for the **{month_choice}**, which is **{Egrid_month} MWh**. in this plot, the corelation between **AC Energy Generation** & **Daily GII** has been shown. The **Color bar** on the **right** side shows the **intensity scale** of GII over the Daily AC Energy Production. Higher the **GII**, so the **AC Energy Production** will higher for that day.')
         
         
-@app.addapp(title='Monthly Data Analysis',icon='🌤')
+@app.addapp(title='Monthly Analytics',icon='🌤')
 def Monthly():
     col1,col2,col3=st.columns((0.005,2.99,0.005))
     col2.write(f'<p style="background-color:#1F306B;color:#FFFFFF;text-align:center;padding:0.4rem;font-size:26px;border-radius:7px 7px 7px 7px;"><b>Monthly Solar Data Analytics</b></p>', unsafe_allow_html=True)
@@ -1612,7 +1612,7 @@ def Monthly():
         
         
         
-@app.addapp(title='Project Summary',icon='📘')
+@app.addapp(title='Summary',icon='📘')
 def project_summary():
     if 'main_data.csv' not in os.listdir('data'):
         st.markdown("Please upload data through `Upload Data` page!")
@@ -2356,19 +2356,19 @@ def tutorialNo ():
          <p><span style="text-decoration: underline;"><strong>STEP-1:</strong></span> First, Open PVSyst from your system. Then Under the Grid-Connected Tab, Create your PV System Design. Now, After setting the parameters of System, detailed losses, Near Shadings and other values, Now, Click on the "<em><strong>Advanced Simul.</strong></em>" Option on the right side as shown in the below picture.</p>
      """,unsafe_allow_html=True)
      st.write('\n')
-     st.image("tuts/pvsyst/Picture2.png")
+     st.image("tuts/pvsyst/picture2.png")
      #Step-2
      st.write("""
               <p><span style="text-decoration: underline;"><strong>STEP-2:</strong></span> Now after you click on "<em><strong>Advanced Simul.</strong></em>", a new window will open as shown here. In this window, select <em><strong>"Output File"</strong></em> Option.</p>
               """,unsafe_allow_html=True)
-     st.image("tuts/pvsyst/Picture3.png") 
+     st.image("tuts/pvsyst/picture3.png") 
     
      #Step-3
      st.write('\n')
      st.write("""
              <p><span style="text-decoration: underline;"><strong>STEP-3:</strong></span> As you click on <em><strong>"Output File"</strong></em> Option, again another window will open. Inside this window, first, on the Top left corner, select <em><strong>"File Name"</strong></em> and if you wish to change the output csv file, then please go ahead otherwise let other parameters <em><strong>unchanged</strong></em> on the <strong><em>left tab</em></strong> as shown below.&nbsp;</p>
               """,unsafe_allow_html=True)
-     st.image("tuts/pvsyst/Picture4.png") 
+     st.image("tuts/pvsyst/picture4.png") 
      st.write('\n')
      #step-4
      st.write('\n')
@@ -2376,7 +2376,7 @@ def tutorialNo ():
               <p><span style="text-decoration: underline;"><strong>STEP-4:</strong></span> Now under the Simulation variables section under the same tab as previous step, first, <strong>select</strong> <em><strong>GlobInc</strong></em> under <em><strong>InColl</strong></em> group, and <em><strong>un-check Globeff</strong></em> parameter.</p>
               """,unsafe_allow_html=True)
      st.write('\n')
-     st.image("tuts/pvsyst/Picture5.png") 
+     st.image("tuts/pvsyst/picture5.png") 
      st.write('\n')
      #step-5
      st.write('\n')
@@ -2384,7 +2384,7 @@ def tutorialNo ():
               <p><span style="text-decoration: underline;"><strong>STEP-5:</strong></span> Next, Under the <em><strong>MetData</strong></em> group, select <em><strong>GlobHor, DiffHor</strong></em> and <em><strong>T_Amb</strong></em>. Follow the picture below for reference.</p>
               """,unsafe_allow_html=True)
      st.write('\n')
-     st.image("tuts/pvsyst/Picture6.png") 
+     st.image("tuts/pvsyst/picture6.png") 
      st.write('\n')
      
      
@@ -2394,7 +2394,7 @@ def tutorialNo ():
               <p><span style="text-decoration: underline;"><strong>STEP-6</strong></span>: Next, Under the <strong>Array</strong> group, select <em><strong>EArray, TArray, IArray, UArray</strong></em> and<em><strong> ArrayOn</strong></em> parameters.</p>
               """,unsafe_allow_html=True)
      st.write('\n')
-     st.image("tuts/pvsyst/Picture7.png") 
+     st.image("tuts/pvsyst/picture7.png") 
      st.write('\n')
      
      #step-7
@@ -2403,7 +2403,7 @@ def tutorialNo ():
               <p><span style="text-decoration: underline;"><strong>STEP-7:</strong></span> Similarly, Under the <strong>System</strong> group, Select only<strong><em> E_Grid</em></strong> parameter and in <em><strong>NormFac</strong></em> group, <strong>Un-check</strong> the <em><strong>PR</strong></em> Parameters.</p>
               """,unsafe_allow_html=True)
      st.write('\n')
-     st.image("tuts/pvsyst/Picture8.png") 
+     st.image("tuts/pvsyst/picture8.png") 
      st.write('\n')
      
      
@@ -2413,7 +2413,7 @@ def tutorialNo ():
               <p><span style="text-decoration: underline;"><strong>STEP-8:</strong></span> Now, all the parameters selection is done &amp; ready to be saved in the <em><strong>output .csv</strong></em> file. The <strong>selected parameters</strong> can be seen on the<strong><em> right side tab</em></strong> of the same window. Click on <em><span style="text-decoration: underline;"><strong>OK</strong></span></em> and exit this window.</p>
               """,unsafe_allow_html=True)
      st.write('\n')
-     st.image("tuts/pvsyst/Picture9.png") 
+     st.image("tuts/pvsyst/picture9.png") 
      st.write('\n')
      
      
@@ -2423,7 +2423,7 @@ def tutorialNo ():
               <p><strong><span style="text-decoration: underline;">STEP-9:</span></strong> Back to the "<em><strong>Advanced Simul.</strong></em>" window, click on <em><strong>Simulation</strong></em> on the <em>bottom left corner</em> of the window and <em><strong>start</strong></em> the project simulation. It'll take few seconds to complete the simulation.&nbsp;</p>
               """,unsafe_allow_html=True)
      st.write('\n')
-     st.image("tuts/pvsyst/Picture10.png") 
+     st.image("tuts/pvsyst/picture10.png") 
      st.write('\n')
      
      
@@ -2433,13 +2433,13 @@ def tutorialNo ():
              <p><span style="text-decoration: underline;"><strong>STEP-10:</strong></span> After the simulation done, your <em><strong>output.csv</strong></em> file is ready and the path to file is now showing in your pvsyst window. Else, you can directly go to <em>path/users/(your_user_name)/pvsyst7.0_Data/UserHourly</em> folder.</p> 
               """,unsafe_allow_html=True)
      st.write('\n')
-     st.image("tuts/pvsyst/Picture11.png")
+     st.image("tuts/pvsyst/picture11.png")
      st.write('\n')
      st.write('**NEXT**')
-     st.image("tuts/pvsyst/Picture12.png")
+     st.image("tuts/pvsyst/picture12.png")
      st.write('\n')
      st.write('**NEXT**')
-     st.image("tuts/pvsyst/Picture13.png")
+     st.image("tuts/pvsyst/picture13.png")
      st.write('\n')
      
      #step-11
@@ -2448,7 +2448,7 @@ def tutorialNo ():
              <p><span style="text-decoration: underline;"><strong>STEP-11:</strong></span> Now, open the Folder and select your recently generated <em><strong>hourly data csv file</strong></em> for your grid-connected project. Open the .csv file and follow the <em><strong>next steps for Data cleaning</strong></em>.</p>
               """,unsafe_allow_html=True)
      st.write('\n')
-     st.image("tuts/pvsyst/Picture14.jpg") 
+     st.image("tuts/pvsyst/picture14.jpg") 
      st.write('\n')
      
      
@@ -2458,7 +2458,7 @@ def tutorialNo ():
               <p><span style="text-decoration: underline;"><strong>STEP-12:</strong></span> Now as shown in the below picture, first select the first 10 rows and simply delete them.</p>
               """,unsafe_allow_html=True)
      st.write('\n')
-     st.image("tuts/pvsyst/Picture15.jpg") 
+     st.image("tuts/pvsyst/picture15.jpg") 
      st.write('\n')
      
      #step-13
@@ -2467,7 +2467,7 @@ def tutorialNo ():
               <p><span style="text-decoration: underline;"><strong>STEP-13:</strong></span> Again, after the deleting first 10 rows, now delete the unit rows and the row below it. And save the .csv file.</p>
               """,unsafe_allow_html=True)
      st.write('\n')
-     st.image("tuts/pvsyst/Picture16.png") 
+     st.image("tuts/pvsyst/picture16.png") 
      st.write('\n')
      
      #Uploading data into kPVIZ
