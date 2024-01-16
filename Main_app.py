@@ -623,7 +623,7 @@ def EDA():
         
         
         #Metrics-Backend
-        df1_sum=df1.sum(axis=0, skipna=True)
+        df1_sum = df1.select_dtypes(include=[np.number]).sum(axis=0, skipna=True)
         dfd=df[df["E_Grid"] != 0.0].resample('D', on='date').mean()
         Tmod=dfd.TArray.mean()
         dfTamb=df.resample('Y', on='date').mean()
