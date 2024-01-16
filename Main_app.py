@@ -436,8 +436,7 @@ def upload_data():
         d1 = pd.DataFrame(data=d1)
         d1.to_csv('data/d1.csv', index=False)
         dstore=pd.DataFrame(data=dstore)
-        dstore =dstore.append(dstore,ignore_index = True)
-        open('data/d_store.csv', 'w').write(dstore.to_csv())
+        
     
     else:
         
