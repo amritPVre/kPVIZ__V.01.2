@@ -1007,6 +1007,7 @@ def Daily():
         cola,colb,colc,cold,cole=st.columns((1,1.1,1,0.9,1))
         st.markdown("----------------------------------------")
     # Convert month name to value
+        st.write(df1)
         df1['month'] = pd.DatetimeIndex(df1['date']).month
         month_obj = datetime.datetime.strptime(month_choice, "%B")
         sel = month_obj.month # Get the month value
