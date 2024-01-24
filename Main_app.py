@@ -1013,19 +1013,19 @@ def Daily():
 
         # Get that particular month and display to the user
         dfB = df1[df1["month"] == sel]
-        #st.write(dfB) # You can add the other coloumns as well
+        st.write(dfB) # You can add the other coloumns as well
         
         dfBs=dfB.resample('D', on='date').sum()
-        #st.write(dfBs)
+        st.write(dfBs)
         
        
         
         dfBs['date'] = dfBs.index
-        #st.write(dfBs)
+        st.write(dfBs)
         
         dfBav=dfB[dfB["TArray"] != 0.0].resample('D', on='date').mean()
         dfBav['date'] = dfBav.index
-        #st.write(dfBav)
+        st.write(dfBav)
         
         dfBavD=dfBav.drop(['GlobHor','GlobInc','DiffHor','EArray','E_Grid', 'IArray','UArray','ArrayON','HOURS','MINUTES','MINUTES_PASS','month','date'], axis = 1)
         #st.write(dfBavD)
