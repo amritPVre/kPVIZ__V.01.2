@@ -1,5 +1,12 @@
 # -*- coding: utf-8 -*-
 """
+Created on Wed Jan 24 17:05:17 2024
+
+@author: amrit
+"""
+
+# -*- coding: utf-8 -*-
+"""
 Created on Sat Dec 25 21:23:50 2021
 
 @author: amrit
@@ -833,7 +840,7 @@ def hourly():
         df1 = df.set_index(['date'])
         
         #Metrics-Backend
-        df1_sum=df1.sum(axis=0, skipna=True)
+        df1_sum = df1.select_dtypes(include=[np.number]).sum(axis=0, skipna=True)
         dfd=df[df["E_Grid"] != 0.0].resample('D', on='date').mean()
         Tmod=dfd.TArray.mean()
         dfTamb=df.resample('Y', on='date').mean()
@@ -981,7 +988,7 @@ def Daily():
         
         
         #Metrics-Backend
-        df1_sum=df1.sum(axis=0, skipna=True)
+        df1_sum = df1.select_dtypes(include=[np.number]).sum(axis=0, skipna=True)
         dfd=df[df["E_Grid"] != 0.0].resample('D', on='date').mean()
         Tmod=dfd.TArray.mean()
         dfTamb=df.resample('Y', on='date').mean()
@@ -1150,7 +1157,7 @@ def Daily():
         
         
         #Metrics-Backend
-        df1_sum=df1.sum(axis=0, skipna=True)
+        df1_sum = df1.select_dtypes(include=[np.number]).sum(axis=0, skipna=True)
         dfd=df[df["E_Grid"] != 0.0].resample('D', on='date').mean()
         Tmod=dfd.TArray.mean()
         dfTamb=df.resample('Y', on='date').mean()
@@ -1322,7 +1329,7 @@ def Monthly():
         
         
         #Metrics-Backend
-        df1_sum=df1.sum(axis=0, skipna=True)
+        df1_sum = df1.select_dtypes(include=[np.number]).sum(axis=0, skipna=True)
         dfd=df[df["E_Grid"] != 0.0].resample('D', on='date').mean()
         Tmod=dfd.TArray.mean()
         dfTamb=df.resample('Y', on='date').mean()
@@ -1481,7 +1488,7 @@ def Monthly():
         
         
         #Metrics-Backend
-        df1_sum=df1.sum(axis=0, skipna=True)
+        df1_sum = df1.select_dtypes(include=[np.number]).sum(axis=0, skipna=True)
         dfd=df[df["E_Grid"] != 0.0].resample('D', on='date').mean()
         Tmod=dfd.TArray.mean()
         dfTamb=df.resample('Y', on='date').mean()
@@ -1641,7 +1648,7 @@ def project_summary():
         
         
         #Metrics-Backend
-        df1_sum=df1.sum(axis=0, skipna=True)
+        df1_sum = df1.select_dtypes(include=[np.number]).sum(axis=0, skipna=True)
         dfd=df[df["E_Grid"] != 0.0].resample('D', on='date').mean()
         Tmod=dfd.TArray.mean()
         dfTamb=df.resample('Y', on='date').mean()
@@ -2006,7 +2013,7 @@ def project_summary():
         
         
         #Metrics-Backend
-        df1_sum=df1.sum(axis=0, skipna=True)
+        df1_sum = df1.select_dtypes(include=[np.number]).sum(axis=0, skipna=True)
         dfd=df[df["E_Grid"] != 0.0].resample('D', on='date').mean()
         Tmod=dfd.TArray.mean()
         dfTamb=df.resample('Y', on='date').mean()
