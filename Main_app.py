@@ -963,7 +963,7 @@ def Daily():
         df.E_Grid[df.E_Grid.lt(0)] = 0
         df['date'] = pd.to_datetime(df['date'])
         df1 = df.set_index(['date'])
-        
+        st.write(df1)
         
         df3x=df1
         df3x['date'] = df3x.index
