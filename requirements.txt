@@ -1,5 +1,5 @@
 pybase64==1.2.1
-datetime==4.3
+datetime
 emoji==1.6.3
 glob2==0.7
 hydralit==1.0.12
